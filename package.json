@@ -15,6 +15,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
     "start": "react-scripts start",
     "dev": "npm start nodemon",
     "build": "react-scripts build",
