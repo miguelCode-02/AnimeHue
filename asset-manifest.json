@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/AnimeHue/static/css/main.433c01bb.css",
+    "main.css": "/AnimeHue/static/css/main.183b6aba.css",
     "main.js": "/AnimeHue/static/js/main.6f5cab19.js",
     "static/media/fondo.mp4": "/AnimeHue/static/media/fondo.cb53f4aaaecca1791f1c.mp4",
     "index.html": "/AnimeHue/index.html",
-    "main.433c01bb.css.map": "/AnimeHue/static/css/main.433c01bb.css.map",
+    "main.183b6aba.css.map": "/AnimeHue/static/css/main.183b6aba.css.map",
     "main.6f5cab19.js.map": "/AnimeHue/static/js/main.6f5cab19.js.map"
   },
   "entrypoints": [
-    "static/css/main.433c01bb.css",
+    "static/css/main.183b6aba.css",
     "static/js/main.6f5cab19.js"
   ]
 }
