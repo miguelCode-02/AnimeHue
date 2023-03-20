@@ -1,0 +1,137 @@
+.video{
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  object-position: center;
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+  filter: blur(2px);
+  transition: filter 1s;
+
+}
+
+.fondo-video{
+  background-color: rgba(0, 0, 0, 0.200);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+.container-anime{
+  margin-top: calc(50vh - 15vh);
+  transition: 1s;
+}
+
+.titule{
+  text-align: center;
+  margin-bottom: 35px;
+  color: white;
+}
+
+.loading{
+  font-size: 36px;
+  font-weight: bold;
+  animation: cambiocolor 3s infinite alternate;
+  text-align: center;
+  color: white;
+}
+
+@keyframes cambiocolor {
+  0% {
+    color: #ffffff;
+  }
+  50% {
+    color: #8b8b8b;
+  }
+  100% {
+    color: #00000000;
+  }
+}
+
+.input{
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 40px;
+  padding: 0.1px;
+
+}
+
+#anime-input{
+  display: block;
+  height: 35px;
+  width: 90%;
+  margin: 0 auto;
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-size: 20px;
+  border-bottom: 0.5px solid gray;
+  background-color: transparent;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+}
+
+.shadow-input{
+  width: 30px;
+  height: 5px;
+  position: absolute;
+  bottom: -3px;
+  right: 5%;
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  border-radius: 5px;
+  clip-path: inset(0 50% 0 50%);
+}
+
+#anime-input:focus + .shadow-input{
+  clip-path: inset(0 0 0 0);
+  background-color: rgb(255, 255, 255);
+  transition: 1s;
+}
+
+#anime-input:focus{
+  border: none;
+  transition: 1s;
+}
+
+.container-catalog{
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(1, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.titule-catalog{
+  max-width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: white;
+  text-align: center;
+}
+
+.contenedor-img-catalog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+}
+
+.img-catalog {
+  max-width: 100%;
+  height: 250px;
+  width: 150px;  /* altura fija */
+  object-fit: cover;
+  object-position: center;
+}
