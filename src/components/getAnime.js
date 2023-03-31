@@ -8,7 +8,7 @@ const SearchAnime = () => {
     const [jikaValue, setJikaValue] = useState(null)
     const [loading, setLoading] = useState(null)
     const [styleContainerAnime, setStyleContainerAnime] = useState({})
-    const [styleVideo, setStyleVideo ] = useState({filter : "none"})
+    const [styleVideo, setStyleVideo ] = useState({})
 
     const handleInputChange = (event) => {
         const value = event.target.value
@@ -28,7 +28,7 @@ const SearchAnime = () => {
                 setJikaValue(data)
             } else {
                 setStyleContainerAnime({})
-                setStyleVideo({filter: "none"})
+                setStyleVideo({})
                 setJikaValue(null)
             }
             setLoading(false)
